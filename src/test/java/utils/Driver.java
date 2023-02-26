@@ -29,10 +29,11 @@ public class Driver {
               caps.setCapability(MobileCapabilityType.PLATFORM_NAME,ConfigReader.getProperty("platformName"));
               caps.setCapability(MobileCapabilityType.PLATFORM_VERSION,ConfigReader.getProperty("platformVersion"));
               caps.setCapability(MobileCapabilityType.DEVICE_NAME,ConfigReader.getProperty("deviceName"));
-              caps.setCapability("appPackage","com.android.chrome");
-              caps.setCapability("appActivity","org.chromium.chrome.browser.ChromeTabbedActivity");
+             // caps.setCapability("appPackage","com.android.chrome");
+             // caps.setCapability("appActivity","org.chromium.chrome.browser.ChromeTabbedActivity");
               //caps.setCapability(MobileCapabilityType.NO_RESET,true);
-
+             caps.setCapability("chromedriverExecutable","C:\\Users\\maruf\\IdeaProjects\\e2e-mobile\\driver\\chromedriver.exe");
+             caps.setCapability(MobileCapabilityType.BROWSER_NAME,"chrome");
 
 
 

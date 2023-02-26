@@ -12,9 +12,12 @@ public class HomePageStepDefs {
 
 
      @Given("Alltricks anasayfasina git")
-     public void alltricks_anasayfasina_git() {
+     public void alltricks_anasayfasina_git() throws InterruptedException {
 
           Driver.getAppiumDriver().get(ConfigReader.getProperty("Url"));
+
+          Thread.sleep(2000);
+          elements.btnAccepter.click();
 
 
      }
@@ -22,10 +25,13 @@ public class HomePageStepDefs {
      @Given("Profil sekmesine geç")
      public void profil_sekmesine_geç() {
 
+          elements.btnProfil.click();
      }
 
      @Then("Adresim kismina emaili gir")
-     public void adresim_kismina_emaili_gir() {
+     public void adresim_kismina_emaili_gir() throws InterruptedException {
+
+          elements.monProfil.click();
 
      }
 
