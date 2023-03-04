@@ -32,7 +32,7 @@ public class Driver {
              // caps.setCapability("appPackage","com.android.chrome");
              // caps.setCapability("appActivity","org.chromium.chrome.browser.ChromeTabbedActivity");
               //caps.setCapability(MobileCapabilityType.NO_RESET,true);
-             caps.setCapability("chromedriverExecutable","C:\\Users\\maruf\\IdeaProjects\\e2e-mobile\\driver\\chromedriver.exe");
+             caps.setCapability("chromedriverExecutable","C:\\Users\\yasar\\IdeaProjects\\e2e-mobile\\driver\\chromedriver.exe");
              caps.setCapability(MobileCapabilityType.BROWSER_NAME,"chrome");
 
 
